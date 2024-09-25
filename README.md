@@ -1,4 +1,4 @@
-![VegaExpress.Orchestration.Services]([https://i.imgur.com/example.png](https://github.com/cochachyLE-Dev/VegaExpress.Orchestration.Services/blob/main/repository-open-graph.png))
+![VegaExpress.Orchestration.Services](https://github.com/cochachyLE-Dev/VegaExpress.Orchestration.Services/blob/main/repository-open-graph.png)
 
 ## VegaExpress.Orchestration.Services
 
