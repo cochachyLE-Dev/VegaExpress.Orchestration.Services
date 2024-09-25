@@ -21,6 +21,8 @@
 - Plataformas streaming
 - Aplicaciones de IoT
 
+**Estado actual:** [work in progress]
+
 ## Autor
 
 * **Nombre:** Luis Eduardo Cochachi Chamorro
