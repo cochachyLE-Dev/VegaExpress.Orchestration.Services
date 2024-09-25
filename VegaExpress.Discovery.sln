@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VegaExpress.Discovery", "VegaExpress.Discovery\VegaExpress.Discovery.csproj", "{71A217DE-FE80-4839-861F-6AC57A489E32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VegaExpress.Agent", "VegaExpress.Agent\VegaExpress.Agent.csproj", "{73E1B64E-D463-4851-9056-BB547A158380}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VegaExpress.Worker", "VegaExpress.Worker\VegaExpress.Worker.csproj", "{0E856458-A47A-4963-AA8C-F3F68536609B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VegaExpress.Gateway", "VegaExpress.Gateway\VegaExpress.Gateway.csproj", "{E4838A28-4CAE-4387-BA0D-0F1827E999C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{787D6C28-9B27-4C36-87C8-FA0A87C27FC8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\LICENSE.txt = ..\..\..\..\Downloads\LICENSE.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VegaExpress.Worker.Client", "VegaExpress.Worker.Client\VegaExpress.Worker.Client.csproj", "{44817164-4450-4011-915B-FADEB3C21399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VegaExpress.Worker.Core", "VegaExpress.Worker.Core\VegaExpress.Worker.Core.csproj", "{181F0244-C3F6-47E5-AEF4-C1D1907FEB4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A217DE-FE80-4839-861F-6AC57A489E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A217DE-FE80-4839-861F-6AC57A489E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A217DE-FE80-4839-861F-6AC57A489E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A217DE-FE80-4839-861F-6AC57A489E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E1B64E-D463-4851-9056-BB547A158380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E1B64E-D463-4851-9056-BB547A158380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E1B64E-D463-4851-9056-BB547A158380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E1B64E-D463-4851-9056-BB547A158380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E856458-A47A-4963-AA8C-F3F68536609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E856458-A47A-4963-AA8C-F3F68536609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E856458-A47A-4963-AA8C-F3F68536609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E856458-A47A-4963-AA8C-F3F68536609B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4838A28-4CAE-4387-BA0D-0F1827E999C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4838A28-4CAE-4387-BA0D-0F1827E999C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4838A28-4CAE-4387-BA0D-0F1827E999C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4838A28-4CAE-4387-BA0D-0F1827E999C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44817164-4450-4011-915B-FADEB3C21399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44817164-4450-4011-915B-FADEB3C21399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44817164-4450-4011-915B-FADEB3C21399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44817164-4450-4011-915B-FADEB3C21399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181F0244-C3F6-47E5-AEF4-C1D1907FEB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181F0244-C3F6-47E5-AEF4-C1D1907FEB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181F0244-C3F6-47E5-AEF4-C1D1907FEB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181F0244-C3F6-47E5-AEF4-C1D1907FEB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC93C035-4E60-4A26-B428-B2FA503CEF6A}
+	EndGlobalSection
+EndGlobal

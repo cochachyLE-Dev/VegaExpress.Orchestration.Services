@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package VegaExpress.Agent.Generated;
+
+service FileService {
+    rpc UploadFileStream(stream FileUploadRequest) returns (FileUploadResponse);
+    rpc DownloadFileStream(FileDownloadRequest) returns (stream FileDownloadResponse);
+}
+
+message FileData {    
+    bytes content = 2;    
+}
+
+message FileUploadRequest {
+    FileData file = 1;
+}
+
+message FileDownloadRequest {
+    string fileName = 1;
+}
+
+message FileUploadResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message FileDownloadResponse {
+    FileData file = 1;
+}

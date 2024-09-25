@@ -1,0 +1,62 @@
+﻿syntax = "proto3";
+
+package VegaExpress.Discovery;
+
+service RegistrationService
+{
+    rpc CreateService(CreateServiceRequest) returns (CreateServiceResponse);
+    rpc GetService(GetServiceRequest) returns (GetServiceResponse);
+    rpc ListServices(ListServicesRequest) returns (ListServicesResponse);
+    rpc DeleteService(DeleteServiceRequest) returns (DeleteServiceResponse);
+    rpc UpdateService(UpdateServiceRequest) returns (UpdateServiceResponse);
+}
+
+message CreateServiceRequest { Registration service = 3; }
+
+message CreateServiceResponse { 
+    int32 status = 1;
+    string message = 2;
+    Registration service = 3; 
+}
+
+message GetServiceRequest { string name = 1; }
+
+message GetServiceResponse { 
+    int32 status = 1;
+    string message = 2;
+    Registration service = 3; 
+}
+
+message ListServicesRequest { }
+
+message ListServicesResponse { 
+    int32 status = 1;
+    string message = 2;
+    Registration service = 3; 
+}
+
+message DeleteServiceRequest { 
+    string name = 1; 
+}
+
+message DeleteServiceResponse { 
+    int32 status = 1;
+    string message = 2;
+}
+
+message UpdateServiceRequest { 
+    Registration service = 1; 
+}
+
+message UpdateServiceResponse { 
+    int32 status = 1;
+    string message = 2;
+    Registration service = 3; 
+}
+
+message Registration {
+    string name = 1;
+    string location = 2;
+    string version = 3;
+    string metadata = 4;
+}

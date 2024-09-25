@@ -1,0 +1,244 @@
+LIIKSOFT CORPORATION
+Acuerdo de licencia de usuario final
+			
+LIIKSOFT
+Librerias de LIIKSOFT para .NET
+Copyright (C) 2019-2022 Liiksoft Inc.
+
+Última revisión en mayo de 2021
+
+ACUERDO DE LICENCIA DE USUARIO FINAL
+PARA TODOS LOS PRODUCTOS DE DESARROLLO DE SOFTWARE INCLUIDOS EN ESTA DISTRIBUCIÓN
+
+IMPORTANTE: LEA DETENIDAMENTE ESTE ACUERDO DE LICENCIA DE USUARIO FINAL ("ACUERDO") ANTES DE DESCARGAR O UTILIZAR LOS PRODUCTOS DE DESARROLLO DE SOFTWARE INCLUIDOS EN ESTA DISTRIBUCIÓN / INSTALACIÓN. 
+
+Este ACUERDO de Liiksoft Inc ("LIIKSOFT") constituye un acuerdo legalmente vinculante entre usted o la empresa y / o entidad que representa ("Usted" o "LICENCIATARIO") y LIIKSOFT para todos los productos, marcos, widgets, código fuente, demostraciones, archivos intermedios, medios, materiales impresos y documentación ("PRODUCTO (S) DE DESARROLLO DE SOFTWARE") incluidos en esta distribución / instalación. 
+
+Al comprar, instalar, copiar o utilizar de otro modo los PRODUCTOS DE DESARROLLO DE SOFTWARE, usted reconoce que ha leído este ACUERDO y acepta regirse por sus términos y condiciones. Si representa a una empresa y / o entidad, reconoce que tiene la autoridad legal para obligar a la empresa y / o entidad que representa a todos los términos y condiciones de este ACUERDO.
+
+Si no está de acuerdo con alguno de los términos y condiciones de este ACUERDO o si no tiene la autoridad legal para obligar a la empresa y / o entidad que representa a cualquiera de los términos y condiciones de este ACUERDO, NO INSTALE, COPIAR, UTILIZAR, EVALUAR O REPLICAR DE CUALQUIER FORMA, CUALQUIER PARTE, ARCHIVO O PORCIÓN DEL PRODUCTO (S) DE DESARROLLO DE SOFTWARE. 
+
+Todos los PRODUCTOS DE DESARROLLO DE SOFTWARE tienen licencia, no se venden. 
+
+1. OTORGAMIENTO DE LICENCIA.
+
+Sujeto a todos los términos y condiciones de este ACUERDO, LIIKSOFT otorga al LICENCIATARIO una licencia no exclusiva e intransferible para instalar y utilizar el PRODUCTO (S) DE DESARROLLO DE SOFTWARE incluidos en esta distribución según lo autorizado en las secciones 1.1 a 1.5 a continuación:
+
+1.1 LICENCIA DE USO INDIVIDUAL.
+
+Si es un individuo, puede instalar, copiar y usar el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE comprando una suscripción de 12 meses a LIIKSOFT o sus revendedores autorizados, de acuerdo con la Sección 9 de este ACUERDO.
+
+1.2 LICENCIA DE USO COMERCIAL Y GUBERNAMENTAL.
+
+LIIKSOFT otorga licencias de los PRODUCTOS DE DESARROLLO DE SOFTWARE por desarrollador. Si representa a una empresa y / o entidad, usted o sus empleados pueden instalar, copiar y utilizar los PRODUCTOS DE DESARROLLO DE SOFTWARE comprando una suscripción de 12 meses a LIIKSOFT o sus revendedores autorizados para cada desarrollador que utilice el PRODUCTO DE DESARROLLO DE SOFTWARE (S) ), de conformidad con la Sección 9 de este ACUERDO. El número de desarrolladores con licencia que utilizan los PRODUCTOS DE DESARROLLO DE SOFTWARE debe ser igual o menor que el número de puestos comprados a LIIKSOFT o sus revendedores autorizados.
+
+1.3 LICENCIA DE USO GRATUITO. 
+
+Si los PRODUCTOS DE DESARROLLO DE SOFTWARE que ha obtenido están marcados como "COMPLIMENTARIOS" o "GRATIS", puede instalar y utilizar los PRODUCTOS DE DESARROLLO DE SOFTWARE. 
+
+LIIKSOFT se reserva el derecho de descontinuar, a su discreción y sin previo aviso, la disponibilidad de versiones GRATUITAS o COMPLEMENTARIAS de los PRODUCTOS DE DESARROLLO DE SOFTWARE o sus partes constituyentes en cualquier momento. 
+
+1.4 LICENCIA DE USO DE EVALUACIÓN (PRUEBA) DE TREINTA (30) DÍAS.
+
+Si los PRODUCTOS DE DESARROLLO DE SOFTWARE que ha obtenido están marcados como "PRUEBA" o "EVALUACIÓN", puede instalar una copia de los PRODUCTOS DE DESARROLLO DE SOFTWARE sólo con fines de evaluación, durante un período de 30 días calendario a partir de la fecha de instalación ("PERIODO DE EVALUACIÓN"). Una vez transcurrido el PERIODO DE EVALUACIÓN, se deben desinstalar los PRODUCTOS DE DESARROLLO DE SOFTWARE y destruir todas las copias.
+
+NO PUEDE CREAR aplicaciones o comenzar proyectos de software utilizando los PRODUCTOS DE DESARROLLO DE SOFTWARE según los términos de la LICENCIA DE USO DE EVALUACIÓN (PRUEBA) DE TREINTA (30) DÍAS.
+
+NO PUEDE REDISTRIBUIR archivos en la distribución de PRODUCTOS DE DESARROLLO DE SOFTWARE si utiliza una versión de evaluación o de prueba de los PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+1.5 SOFTWARE ANTERIOR A LA PUBLICACIÓN.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE marcados como PRE-LANZAMIENTO (que incluyen, entre otros, la designación de Alpha, Beta, Community Technology Preview "CTP" o Release Candidate "RC") pueden contener deficiencias y, como tal, no deben considerarse para utilizar o integrado en cualquier aplicación de misión crítica. 
+
+LIIKSOFT puede, a su sola discreción, descontinuar la disponibilidad del software de PREVERSIÓN, limitar o modificar la funcionalidad del software de PREVERSIÓN o eliminar los SERVICIOS DE SOPORTE para el software de PREVERSIÓN en cualquier momento. Para obtener una lista completa del software PRE-LANZAMIENTO, consulte la siguiente página web: https://www.liiksoft.com/pre-release
+
+2. LIMITACIONES DE INGENIERÍA INVERSA, DESCOMPILACIÓN Y DESMONTAJE.
+
+No puede realizar ingeniería inversa, descompilar, crear trabajos derivados o desensamblar los PRODUCTOS DE DESARROLLO DE SOFTWARE. Si usted compra el PRODUCTO (S) DE DESARROLLO DE SOFTWARE con la intención de realizar ingeniería inversa, descompilar, crear trabajos derivados o la explotación y transferencia no autorizada de cualquier propiedad intelectual y secretos comerciales de LIIKSOFT, para incluir cualquier método expuesto o código fuente donde se proporcione. , no existirá ningún derecho de uso con licencia y cualquier PRODUCTO creado como resultado se considerará ilegal por definición. Cualquier venta o reventa de propiedad intelectual o derivados creados así obtenidos será procesada en la mayor medida de todas las leyes locales, federales e internacionales.
+
+3. SEPARACIÓN DE COMPONENTES.
+
+El PRODUCTO (S) DE DESARROLLO DE SOFTWARE tiene licencia como un solo PRODUCTO (S). Los PRODUCTOS DE DESARROLLO DE SOFTWARE y sus partes constituyentes y los redistribuibles proporcionados no pueden someterse a ingeniería inversa, descompilarse, desmontarse o separarse para su uso en más de una computadora, ni colocarse para su distribución, venta o reventa como creaciones individuales por parte del LICENCIATARIO. La provisión de código fuente, si se incluye con el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE, no constituye transferencia de ningún derecho legal sobre dicho código, y la reventa o distribución de todo o parte de todo el código fuente y propiedad intelectual será procesada a la el máximo alcance de todas las leyes locales, federales e internacionales aplicables. Todas las bibliotecas, el código fuente, los redistribuibles y otros archivos de LIIKSOFT siguen siendo propiedad exclusiva de LIIKSOFT. No puede distribuir ningún archivo,
+
+4. ALQUILER.
+
+No puede alquilar, arrendar ni prestar el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE.
+
+5. TRASLADO.
+
+NO puede transferir de forma permanente o temporal NINGUNO de sus derechos en virtud de este ACUERDO a ninguna persona, empresa o entidad gubernamental sin la aprobación previa por escrito de LIIKSOFT. Independientemente de las modificaciones que realice y de cómo pueda compilar, vincular y / o empaquetar sus programas, bajo ninguna circunstancia las bibliotecas, Redistribuibles y / o archivos incluidos en los PRODUCTOS DE DESARROLLO DE SOFTWARE (incluidas las partes) del mismo) ser utilizado para desarrollar programas por cualquier persona que no sea usted. Solo usted, como LICENCIATARIO, tiene derecho a utilizar las bibliotecas, los redistribuibles u otros archivos de los PRODUCTOS DE DESARROLLO DE SOFTWARE (o cualquier parte de los mismos) para desarrollar programas creados con los PRODUCTOS DE DESARROLLO DE SOFTWARE. No puede compartir copias de los Redistribuibles con otros co-desarrolladores.
+
+6. REDISTRIBUCIÓN.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE pueden incluir ciertos archivos ("REDISTRIBUTABLES") destinados a ser distribuidos por usted a los usuarios de las aplicaciones de software que cree. Los redistribuibles incluyen, por ejemplo, aquellos archivos identificados en la documentación impresa o en línea como archivos redistribuibles o aquellos archivos preseleccionados para su implementación por una utilidad de instalación proporcionada con el PRODUCTO (S) DE DESARROLLO DE SOFTWARE (si corresponde). En todas las circunstancias, los REDISTRIBUIBLES para el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE son solo aquellos archivos específicamente designados como tales por LIIKSOFT.
+
+EN NINGÚN MOMENTO EL LICENCIATARIO PUEDE CREAR NINGUNA HERRAMIENTA, REDISTRIBUIBLE O PRODUCTO QUE COMPITE DIRECTA O INDIRECTAMENTE CON CUALQUIER PRODUCTO LIIKSOFT, INCLUYENDO, PERO NO LIMITADO A, LOS PRODUCTOS DE DESARROLLO DE SOFTWARE, UTILIZANDO TODO O CUALQUIER PARTE DEL SOFTWARE DEVELOP DEVELOP PRODUCTO (S).
+
+La distribución por parte del LICENCIATARIO de cualquier herramienta en tiempo de diseño (EXE o DLL), ejecutables y código fuente distribuidos al LICENCIATARIO por LIIKSOFT como parte de este PRODUCTO DE DESARROLLO DE SOFTWARE y no identificado explícitamente como un archivo redistribuible está estrictamente prohibido. El LICENCIATARIO no desarrollará aplicaciones de software que proporcionen una interfaz de programación de aplicaciones para los PRODUCTOS DE DESARROLLO DE SOFTWARE o los PRODUCTOS DE DESARROLLO DE SOFTWARE modificados.
+
+El LICENCIATARIO NO puede distribuir el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE, en ningún formato, a otros con fines de desarrollo o compilación de aplicaciones.
+
+Si ha comprado una suscripción de 12 meses como se describe en la Sección 9 de este ACUERDO, o ha obtenido una LICENCIA DE USO COMPLIMENTARIO como se describe en la Sección 1.3 de este ACUERDO, puede reproducir y distribuir copias de los REDISTRIBUIBLES, siempre que dichas copias se hagan de la copia original de los REDISTRIBUTABLES incluida con el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE o versiones modificadas de los REDISTRIBUTABLES que le proporciona LIIKSOFT o los que usted crea. Las copias de REDISTRIBUTABLES solo se pueden distribuir con y con el único propósito de ejecutar programas de aplicación permitidos bajo este ACUERDO que usted ha creado utilizando los PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+La lista completa de REDISTRIBUIBLES bajo este ACUERDO es la siguiente:
+
+Liiksoft.Base.v21.1.dll
+Liiksoft.Ecommerce.Provider.v21.1.dll
+
+
+Cuando corresponda y / o estén disponibles, los recursos lingüísticos localizados se pueden proporcionar en forma de conjuntos REDISTRIBUIBLES correspondientes a los esquemas de nombres REDISTRIBUIBLES enumerados en este ACUERDO:
+
+Liiksoft. *. V21.1.resources.dll 
+
+EL LICENCIATARIO NO PUEDE REDISTRIBUIR ningún archivo de la distribución de PRODUCTOS DE DESARROLLO DE SOFTWARE si utiliza una versión de evaluación, de prueba, No para reventa o de demostración de los PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+7. DERECHOS DE AUTOR.
+
+Todos los títulos y derechos de autor en y para el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE (S) (incluidas, entre otras, las marcas comerciales de LIIKSOFT, imágenes redactadas, demostraciones, código fuente, archivos intermedios, paquetes, fotografías, redistribuibles, animaciones, video, audio, música, texto). , y "applets" incorporados en los PRODUCTOS DE DESARROLLO DE SOFTWARE, los materiales impresos adjuntos y cualquier copia de los PRODUCTOS DE DESARROLLO DE SOFTWARE) son propiedad de LIIKSOFT o sus subsidiarias.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE están protegidos por leyes de derechos de autor y disposiciones de tratados internacionales y, por lo tanto, debe tratar los PRODUCTOS DE DESARROLLO DE SOFTWARE como cualquier otro material con derechos de autor, excepto que puede instalar y utilizar los PRODUCTOS DE DESARROLLO DE SOFTWARE como se describe en este ACUERDO.
+
+8. BIBLIOTECAS DE CÓDIGO ABIERTO.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE que se encuentran en este paquete de instalación pueden incluir o requerir ciertos componentes o bibliotecas de código abierto de terceros (“LAS BIBLIOTECAS DE CÓDIGO ABIERTO”).
+
+Cuando corresponda, LIIKSOFT puede incluir un archivo de "AVISO" para proporcionar una lista de LAS BIBLIOTECAS DE CÓDIGO ABIERTO necesarias para determinadas partes de la documentación, código fuente de muestra y otros proyectos de demostración.
+
+LAS BIBLIOTECAS DE CÓDIGO ABIERTO incluidas en los PRODUCTOS DE DESARROLLO DE SOFTWARE se realizan de conformidad con cada licencia de biblioteca de código abierto individual y están sujetas a las renuncias y limitaciones de responsabilidad establecidas en cada licencia de biblioteca de código abierto.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE pueden incluir referencias de instalación externa para LAS BIBLIOTECAS DE CÓDIGO ABIERTO en sus respectivas ubicaciones de administración de paquetes. Estas ubicaciones externas pueden incluir, entre otras, NuGet o npm. Antes de instalar LAS BIBLIOTECAS DE CÓDIGO ABIERTO, usted es responsable de revisar y aceptar cada acuerdo de licencia asociado que acompaña a una biblioteca y cualquier otra dependencia secundaria requerida por esa biblioteca.
+
+Ya sea que se incluyan como parte del paquete de instalación de los PRODUCTOS DE DESARROLLO DE SOFTWARE, o se mencionen como una dependencia o requisito externo, LAS BIBLIOTECAS DE CÓDIGO ABIERTO se proporcionan "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD, APTITUD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LIIKSOFT, LOS AUTORES O LOS TITULARES DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES DE NINGÚN RECLAMO, DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO MODO, QUE SURJA DE, FUERA DE O EN RELACIÓN CON LAS BIBLIOTECAS DE CÓDIGO ABIERTO O EL USO DE OTROS NEGOCIOS EN LAS BIBLIOTECAS DE CÓDIGO ABIERTO.
+
+LAS BIBLIOTECAS DE CÓDIGO ABIERTO enumeradas en esta sección se incluyen en este paquete de instalación de PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+Castillo hinchable (código abierto - La licencia del castillo hinchable)
+Copyright (C) 2000-2020 La Legión del Castillo Hinchable Inc.
+Partes de la biblioteca del castillo hinchable que se utilizan para admitir X.509, CMS (RFC 3852) y el protocolo de marca de tiempo (RFC 3161).
+https://github.com/bcgit/bc-csharp/blob/master/crypto/License.html
+
+Informes Importación (Código abierto - Licencia MIT)
+Derechos de autor (c) 2018 Liiksoft Inc.
+https://github.com/Liiksoft/Reporting.Import/blob/master/LICENSE
+
+System.Data.SQLite y System.Data.SQLite.EF6 (Código abierto - Licencia pública de Microsoft)
+https://system.data.sqlite.org/index.html/doc/trunk/www/copyright.wiki 
+
+9. SUSCRIPCIÓN DE DOCE (12) MESES Y ACTUALIZACIONES.
+
+LIIKSOFT licencia el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE mediante suscripción. Una suscripción tiene una duración de 12 meses a partir de la fecha de compra. El LICENCIATARIO será elegible para recibir todas las actualizaciones mayores y menores de los PRODUCTOS DE DESARROLLO DE SOFTWARE durante este período de 12 meses. Al vencimiento de una suscripción (12 meses, más 1 día después de la fecha de compra original), el LICENCIATARIO puede renovar opcionalmente la suscripción de PRODUCTOS DE DESARROLLO DE SOFTWARE por un período adicional de 12 meses (y cada año subsiguiente a partir de entonces) para continuar recibiendo los principales y actualizaciones menores de los PRODUCTOS DE DESARROLLO DE SOFTWARE de LIIKSOFT.
+
+Si el PRODUCTO (S) DE DESARROLLO DE SOFTWARE está etiquetado como una actualización, debe tener la licencia adecuada para obtener el PRODUCTO (S) DE DESARROLLO DE SOFTWARE actualizado. UN PRODUCTO (S) DE DESARROLLO DE SOFTWARE etiquetado como una actualización reemplaza y / o complementa el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE que formaron la base para su elegibilidad para la actualización, y juntos constituyen un solo PRODUCTO (S). Solo puede usar el PRODUCTO (S) actualizado (S) de acuerdo con todos los términos de este ACUERDO.
+
+Los precios de la suscripción de 12 meses a PRODUCTOS DE DESARROLLO DE SOFTWARE y cualquier renovación posterior de la suscripción se enumeran en Liiksoft.com y están sujetos a cambios con o sin previo aviso.
+
+LOS REDISTRIBUIBLES a los que se hace referencia en este ACUERDO dependen del tipo de suscripción de 12 meses comprada a LIIKSOFT.
+
+LIIKSOFT se reserva el derecho de descontinuar el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE o sus componentes, en cualquier momento.
+
+10. DESCARGA DE PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+Los PRODUCTOS DE DESARROLLO DE SOFTWARE estarán disponibles para su descarga desde Liiksoft.com exclusivamente.
+
+11. RESTRICCIONES A LA EXPORTACIÓN.
+
+LIIKSOFT cumple expresamente con todas las restricciones de exportación impuestas por el gobierno de los Estados Unidos de América. Usted, como LICENCIATARIO, debe aceptar no exportar ni reexportar los PRODUCTOS DE DESARROLLO DE SOFTWARE dentro de ninguna aplicación creada a ningún país, persona, entidad o usuario final sujeto a las restricciones de exportación de EE. UU. Los países restringidos actualmente incluyen, entre otros, Cuba, Irán, Corea del Norte, Sudán, Siria y Venezuela. Usted garantiza y declara que ni la Oficina de Administración de Exportaciones de EE. UU. Ni ninguna otra agencia federal ha suspendido, revocado o negado sus privilegios de exportación.
+
+12. RENUNCIA DE GARANTÍA.
+
+LIIKSOFT renuncia expresamente a cualquier garantía por el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE. LOS PRODUCTOS DE DESARROLLO DE SOFTWARE Y CUALQUIER DOCUMENTACIÓN RELACIONADA SE PROPORCIONAN "TAL CUAL" SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUYENDO, SIN LIMITACIÓN, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, ADECUACIÓN PARA UN PROPÓSITO PARTICULAR. LIIKSOFT NO GARANTIZA NI HACE NINGUNA DECLARACIÓN CON RESPECTO AL USO O LOS RESULTADOS DEL USO DEL PRODUCTO DE DESARROLLO DE SOFTWARE EN TÉRMINOS DE CORRECCIÓN, PRECISIÓN, FIABILIDAD O DE OTRO MODO. TODO EL RIESGO QUE SURJA DEL USO O EL RENDIMIENTO DEL PRODUCTO (S) DE DESARROLLO DE SOFTWARE PERMANECE EN USTED. Ninguna información o consejo verbal o escrito brindado por LIIKSOFT o sus empleados creará una garantía o de alguna manera aumentará el alcance de esta garantía.
+
+13. LIMITACIONES DE RESPONSABILIDAD.
+
+En la máxima medida permitida por la ley aplicable, en ningún caso LIIKSOFT será responsable de ningún daño especial, incidental, indirecto o consecuente (incluidos, entre otros, daños por pérdida de beneficios comerciales, interrupción del negocio, pérdida de información comercial o cualquier otra pérdida pecuniaria) que surja del uso o la imposibilidad de usar el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE o la provisión o no prestación de SERVICIOS DE APOYO, incluso si se ha advertido a LIIKSOFT de la posibilidad de tales daños.
+
+El LICENCIATARIO comprende que los PRODUCTOS DE DESARROLLO DE SOFTWARE pueden producir resultados inexactos debido a una falla o falla dentro de los PRODUCTOS DE DESARROLLO DE SOFTWARE o la falla del LICENCIATARIO para usar o implementar correctamente los PRODUCTOS DE DESARROLLO DE SOFTWARE. El LICENCIATARIO asume la responsabilidad total y exclusiva por cualquier uso de los PRODUCTOS DE DESARROLLO DE SOFTWARE, y asume todo el riesgo de fallas o fallas dentro de los PRODUCTOS DE DESARROLLO DE SOFTWARE. Usted acepta que, independientemente de la causa de la falla o la forma de cualquier reclamo, SU ÚNICO RECURSO Y LA ÚNICA OBLIGACIÓN DE LIIKSOFT SE REGIRÁN POR ESTE ACUERDO Y EN NINGÚN CASO LA RESPONSABILIDAD DE LIIKSOFT EXCEDERÁ EL PRECIO PAGADO A LIIKSOFT POR EL PRODUCTO DE DESARROLLO DE SOFTWARE ( S). Esta Garantía limitada es nula si la falla de los PRODUCTOS DE DESARROLLO DE SOFTWARE se debe a un accidente,
+
+14. INDEMNIZACIÓN.
+
+Por la presente, usted acepta indemnizar a LIIKSOFT y a sus funcionarios, directores, empleados, agentes y representantes de todas y cada una de las demandas, reclamaciones, pérdidas, responsabilidades o daños de cualquier tipo, incluidos los honorarios reales de abogados, ya sea por agravio o contrato, que él o cualquiera de ellos puede incurrir en razón de, o que surja de, cualquier reclamo realizado por un tercero con respecto a cualquier incumplimiento o violación de este ACUERDO por su parte o cualquier reclamo basado en las Aplicaciones y el (los) PRODUCTO (S) DE DESARROLLO DE SOFTWARE incluido en este documento, incluyendo, sin limitación, cualquier reclamo realizado por sus clientes usuarios finales.
+
+15. DERECHOS RESTRINGIDOS DEL GOBIERNO DE EE. UU.
+
+Para los PRODUCTOS DE DESARROLLO DE SOFTWARE comprados, instalados, copiados o utilizados en nombre de cualquier agencia o departamento del gobierno de los Estados Unidos ("US GOVT"), el GOVT de EE. UU. Acepta que los PRODUCTOS DE DESARROLLO DE SOFTWARE se adquieren con derechos restringidos de acuerdo con el seguimiento:
+
+Para el Departamento de Defensa: El PRODUCTO (S) DE DESARROLLO DE SOFTWARE es "Software informático comercial" según se define en la Cláusula 252.227-7013 (c) (1) de los DFARS.
+
+Para todas las agencias o departamentos: Los derechos del Gobierno de los EE. UU. Sobre los PRODUCTOS DE DESARROLLO DE SOFTWARE se definen en la Cláusula 52.227-19 (c) (2) de las FAR.
+
+El fabricante del PRODUCTO (S) DE DESARROLLO DE SOFTWARE es: Developer Express, Inc., 505 N. Brand Blvd Suite 1450 Glendale, CA 91203.
+
+16. SERVICIOS DE APOYO.
+
+LIIKSOFT puede proporcionarle servicios de soporte relacionados con los PRODUCTOS DE DESARROLLO DE SOFTWARE ("SERVICIOS DE SOPORTE"). El uso de los SERVICIOS DE SOPORTE se rige por las políticas y los programas de LIIKSOFT descritos en el manual del usuario, en la documentación "en línea" y / o en otros materiales proporcionados por LIIKSOFT. LIIKSOFT puede restringir o descontinuar los SERVICIOS DE SOPORTE que se le brindan si LIIKSOFT considera que su uso de los SERVICIOS DE APOYO, a su única y razonable discreción, es excesivo y está más allá del alcance del uso justo.
+
+Cualquier PRODUCTO (S) DE DESARROLLO DE SOFTWARE complementario que se le proporcione como parte de los SERVICIOS DE SOPORTE se considerará parte del PRODUCTO (S) DE DESARROLLO DE SOFTWARE y estará sujeto a los términos y condiciones de este ACUERDO. Con respecto a la información técnica que usted proporciona a LIIKSOFT como parte de los SERVICIOS DE SOPORTE, LIIKSOFT puede usar dicha información para sus propósitos comerciales, incluso para soporte y desarrollo de PRODUCTOS DE DESARROLLO DE SOFTWARE.
+
+17. TERMINACIÓN.
+
+Sin perjuicio de cualquier otro derecho o recurso, LIIKSOFT dará por terminado este ACUERDO si usted no cumple con todos los términos y condiciones de este ACUERDO. En tales casos, el LICENCIATARIO debe destruir todas las copias de los PRODUCTOS DE DESARROLLO DE SOFTWARE y todos sus componentes, incluida cualquier documentación relacionada, y debe eliminar CUALQUIER y TODO uso de la propiedad intelectual de LIIKSOFT de cualquier aplicación distribuida por el LICENCIATARIO, ya sea en formato nativo, estados alterados o compilados.
+
+18. IMPUESTO.
+
+Las leyes gubernamentales locales, estatales o nacionales pueden exigir que LIIKSOFT le cobre el impuesto sobre las ventas o el uso. Si no se requiere legalmente que LIIKSOFT cobre los impuestos aplicables en el momento de la compra, debe confirmar que su gobierno local, estatal o nacional no impone ningún impuesto sobre las ventas o el uso del software entregado electrónicamente. Usted es totalmente responsable de dichos impuestos sobre las ventas o el uso.
+
+19. DATOS PERSONALES.
+
+Toda la información que LIIKSOFT recopila de usted se almacena y mantiene en servidores que utilizan salvaguardas de seguridad de datos razonables y adecuadas. LIIKSOFT no presta, arrienda, vende ni comercializa la información que obtiene de sus clientes o de quienes nos brindan información de identificación personal. LIIKSOFT no divulga información de compra o información de licencia a terceros.
+
+LIIKSOFT recopila información de identificación personal cada vez que compra / licencia un producto o servicio LIIKSOFT. La información incluye el nombre, la dirección, el número de teléfono, la dirección de correo electrónico, la información de pago, las compras de productos, las licencias que posee, los detalles del empleado / contacto, etc. otros asuntos comerciales importantes.
+
+LIIKSOFT no desea recibir, actuar para obtener, ni solicitar, información y materiales confidenciales o patentados de usted a través del uso de los PRODUCTOS DE DESARROLLO DE SOFTWARE o los SERVICIOS DE SOPORTE. Todos y cada uno de los materiales, archivos adjuntos o información que envíe como parte de envíos de errores, o divulgados durante chats, discusiones en línea, envíos al Centro de soporte o puestos a disposición de LIIKSOFT de cualquier manera, se considerarán NO confidenciales por parte de LIIKSOFT. Usted reconoce que los envíos a LIIKSOFT no se considerarán confidenciales o patentados y que LIIKSOFT no tendrá la obligación de mantener dicha información confidencial.
+
+Su elección de utilizar los PRODUCTOS DE DESARROLLO DE SOFTWARE indica su aceptación de los términos de este ACUERDO. Usted es responsable de mantener la confidencialidad de su nombre de usuario, contraseña y otra información confidencial. Usted es responsable de todas las actividades que ocurran en su cuenta de usuario y, en caso de cualquier actividad no autorizada en su cuenta, acepta informar a LIIKSOFT de inmediato mediante cualquier método que se enumere en la página de contactos del sitio web de LIIKSOFT. LIIKSOFT no es responsable de ninguna pérdida o daño a usted oa terceros incurridos como resultado de cualquier acceso no autorizado y / o uso de su cuenta de usuario, o de otro modo.
+
+LIIKSOFT puede divulgar o reportar Información Confidencial en circunstancias limitadas cuando crea de buena fe que la divulgación es requerida por la ley. Por ejemplo, se puede solicitar a LIIKSOFT que revele Información confidencial para cooperar con los reguladores o las autoridades policiales, para cumplir con un proceso legal como una orden judicial, una citación, una orden de registro o una solicitud de aplicación de la ley. Además, si la propiedad de todo o sustancialmente todo nuestro negocio cambia o si transferimos activos relacionados con nuestro negocio o los PRODUCTOS DE DESARROLLO DE SOFTWARE a un tercero, como por fusión, adquisición, procedimiento de quiebra o de otro modo, podemos transferir o vender su información personal al nuevo propietario. En tal caso, a menos que la ley aplicable permita lo contrario,
+
+El uso de datos personales por parte de LIIKSOFT se rige por los términos establecidos en nuestra Política de privacidad integral:
+https://www.liiksoft.com/aboutus/privacy-policy.xml
+
+19.1 PROGRAMA DE EXPERIENCIA DEL CLIENTE.
+
+Cuando se une opcionalmente al Programa de experiencia del cliente, su computadora o dispositivo transmite automáticamente información a LIIKSOFT sobre el uso de los PRODUCTOS DE DESARROLLO DE SOFTWARE. Esta información se utiliza para abordar problemas dentro de los productos LIIKSOFT y mejorar la calidad / usabilidad.
+
+Opt in / Opt out
+
+El Programa de experiencia del cliente es estrictamente opcional y puede optar por participar o no participar en el programa en cualquier momento ejecutando el instalador de LIIKSOFT y haciendo la selección adecuada dentro del programa de instalación.
+
+Intimidad
+
+El Programa de experiencia del cliente no transmite información de identificación personal como su nombre, dirección o número de teléfono.
+
+Lo que recolectamos
+
+El Programa de experiencia del cliente solo recopila información relacionada con los controles y bibliotecas de LIIKSOFT. Esta información incluye el uso de los controles LIIKSOFT en tiempo de diseño dentro de Visual Studio y el uso de demostraciones de LIIKSOFT. LIIKSOFT CodeRush recopila el tipo de proyecto y la información del tipo de archivo cuando edita código en Visual Studio. No se recopila información de las aplicaciones / demostraciones que crea.
+
+19.2 RETROALIMENTACIÓN DE LA DEMOSTRACIÓN
+
+La función Comentarios de demostración presentada dentro de las aplicaciones de demostración incluidas del PRODUCTO (S) DE DESARROLLO DE SOFTWARE, le permite enviar comentarios a LIIKSOFT y, opcionalmente, incluir cualquier información adicional para describir el cumplido o inquietud específicos que pueda tener con respecto a la aplicación de demostración. . Aunque los Comentarios de demostración no recopilan intencionalmente información de identificación personal, es posible que dicha información se capture en el texto de comentarios que proporcione. LIIKSOFT no desea recibir dicha información ni utilizará esta información para identificarlo.
+
+Salvo que se describa lo contrario en esta declaración, los Comentarios de demostración no transmiten información personal a LIIKSOFT.
+
+20. VARIOS.
+
+Cuando corresponda, como parte de la instalación de los PRODUCTOS DE DESARROLLO DE SOFTWARE, LIIKSOFT puede incluir y / o requerir el uso de ciertas bibliotecas redistribuibles que Microsoft pone a disposición en forma binaria bajo los términos y condiciones de los siguientes acuerdos de licencia: Entity Framework 6 Runtime Licencia (https://msdn.microsoft.com/en-us/library/dn467385(v=vs.113).aspx).
+
+No se concede ningún derecho de uso o licencia a los proveedores de mapas disponibles en el PRODUCTO DE DESARROLLO DE SOFTWARE. El LICENCIATARIO debe obtener y seguir los términos de licencia apropiados y los derechos de uso establecidos por cada proveedor de mapas.
+
+Cuando utilice datos de OpenStreetMap, debe leer y comprender los términos de uso de OpenStreetMap. Lea las preguntas frecuentes legales de OpenStreetMap. https://wiki.osmfoundation.org/wiki/Licence/Licence_and_Legal_FAQ
+
+Si usa OpenStreetMap Tiles, debe leer y comprender la Política de uso de OpenStreetMap Tile. Lea la Política de mosaicos de OpenStreetMap. https://operations.osmfoundation.org/policies/tiles/
+
+Al usar Bing Maps, debe leer y comprender los términos de uso de Microsoft. Lea la información sobre precios y licencias de Bing Maps. http://www.microsoft.com/maps/product/licensing.aspx
+
+Donde corresponda, el PRODUCTO (S) DE DESARROLLO DE SOFTWARE puede implementar ciertas especificaciones publicadas por MBTiles y disponibles bajo la licencia Creative Commons Attribution 3.0 Unported (CC-BY). https://github.com/mapbox/mbtiles-spec/blob/master/LICENSE
+
+Este ACUERDO se interpretará, interpretará y regirá por las leyes del estado de Nevada, EE. UU. Este ACUERDO le otorga derechos legales específicos; puede tener otros que varían de un estado a otro y de un país a otro.
+
+Este ACUERDO solo puede ser modificado por escrito firmado por usted y un funcionario autorizado de Liiksoft Inc. Si alguna disposición de este ACUERDO se considera nula o inaplicable, el resto seguirá siendo válido y ejecutable de acuerdo con sus términos. Si se determina que algún recurso provisto ha fallado para su propósito esencial, todas las limitaciones de responsabilidad y exclusiones de daños establecidas en la Garantía limitada permanecerán vigentes.
+
+LIIKSOFT se reserva todos los derechos no otorgados específicamente en este ACUERDO.
+
+Si tiene alguna pregunta sobre este ACUERDO, contáctenos directamente en los Estados Unidos al +1 (818) 844 3383, o escriba a: Liiksoft Inc. Departamento legal / 505 N. Brand Blvd Suite 1450, Glendale CA 91203.
+
+Todas las marcas comerciales y marcas comerciales registradas son propiedad de sus respectivos dueños.

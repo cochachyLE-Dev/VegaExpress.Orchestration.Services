@@ -1,0 +1,41 @@
+﻿syntax = "proto3";
+
+import "Google/Protobuf/Empty.proto";
+
+package VegaExpress.Discovery;
+
+service HealthCheckService {
+    rpc StartMonitoring(StartMonitoringRequest) returns (stream StartMonitoringResponse); 
+    rpc SendMessage(stream Message) returns (google.protobuf.Empty); 
+}
+
+message StartMonitoringRequest { }
+message StartMonitoringResponse
+{
+    int32 status = 1;
+    string message = 2;
+    HealthCheck HealthCheck = 3;
+}
+
+message Message
+{
+    MessageType type = 1;
+    string content = 2;
+}
+
+enum MessageType
+{
+   mistake = 0;
+   warning = 1;
+   information = 2;
+}
+
+message HealthCheck
+{
+    bool availability = 1;
+    double average_response_time = 2;
+    map<string, double> resource_usage = 3; // Repeated field of ResourceUsage message
+    double error_rate = 4;
+    int32 traffic = 5;
+    string location = 6;
+}

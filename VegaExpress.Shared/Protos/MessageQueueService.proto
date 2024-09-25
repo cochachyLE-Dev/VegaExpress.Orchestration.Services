@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+package VegaExpress.Agent.Generated;
+
+service MessageQueueService {
+    rpc Send(stream MessageRequest) returns (MessageResponse) {}
+    rpc GetStatus(GetStatusRequest) returns (GetStatusResponse) {}
+    rpc Subscribe(SubscribeRequest) returns (stream SubscribeResponse) {}
+    rpc Unsubscribe(UnsubscribeRequest) returns (UnsubscribeResponse) {}
+}
+
+message GetStatusRequest {
+    string agent_uid = 1;
+    string message_id = 2;
+}
+
+message GetStatusResponse {
+    bool success = 1;    
+    oneof result {
+        Error error = 2;
+        StatusType state = 3;
+    }
+}
+
+message MessageRequest {
+    string agent_uid = 1;    
+    google.protobuf.Any content = 2;
+}
+
+message SubscribeRequest {
+    string agent_uid = 1;
+    string service_uid = 2;
+}
+
+message UnsubscribeRequest {
+    string agent_uid = 1;
+    string service_uid = 2;
+}
+
+message MessageResponse {
+    string message_id = 1;
+    bool success = 2;
+}
+
+message SubscribeResponse {        
+    bool success = 1;
+    google.protobuf.Any content = 2;
+}
+
+message UnsubscribeResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message Error 
+{
+    string message = 1;
+    repeated string causes = 2;
+}
+
+enum StatusType
+{
+    New = 0;
+    Open = 1;
+    Pending = 2;
+    OnHold = 3;
+    InProgress = 4;
+    Resolved = 5;
+    Closed = 6;
+    Cancelled = 7;
+}

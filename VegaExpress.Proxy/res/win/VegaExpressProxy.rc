@@ -1,0 +1,25 @@
+101 ICON VegaExpressProxy.ico
+1 VERSIONINFO
+FILEVERSION     1,2,1,0
+PRODUCTVERSION  1,2,1,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName",      "LIIKSOFT"
+      VALUE "FileDescription",  "LIIKSOFT VegaExpressProxy : High-performance Distributed Proxy and Tunneling Solution for TCP"
+      VALUE "FileVersion",      "Hayabusa.1.2.1.0"
+      VALUE "InternalName",     "Hayabusa"
+      VALUE "LegalCopyright",   "Copyright © 2024 Liiksoft"
+      VALUE "LegalTrademarks",  "VegaExpress® Liiksoft, Perú"
+      VALUE "OriginalFilename", "VegaExpressProxy.exe"
+      VALUE "ProductName",      "VegaExpressProxy"
+      VALUE "ProductVersion",   "1.2.2.1"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END

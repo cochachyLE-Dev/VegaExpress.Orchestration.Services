@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+import "google/api/annotations.proto";
+
+package VegaExpress.Agent.Generated;
+
+service ProcessThreadService {
+    rpc StreamProcessThreads (ProcessThreadRequest) returns (stream ProcessThread){ option (google.api.http) = { get: "/ProcessThread" }; };
+}
+
+message ProcessThreadRequest {
+    int32 process_id = 1;
+}
+
+message ProcessThread {
+    int32 id = 1;
+    int32 base_priority = 2;
+    int32 current_priority = 3;
+    ThreadPriorityLevel priority_level = 4;
+    google.protobuf.Timestamp start_time = 5;
+    google.protobuf.Duration total_processor_time = 6;
+    google.protobuf.Duration user_processor_time = 7;
+    google.protobuf.Duration privileged_processor_time = 8;
+    ThreadState thread_state = 9;
+    ThreadWaitReason wait_reason = 10;
+}
+
+enum ThreadPriorityLevel {
+    tpl_idle = 0;
+    tpl_lowest = 1;
+    tpl_below_normal = 2;
+    tpl_normal = 3;
+    tpl_above_normal = 4;
+    tpl_highest = 5;
+    tpl_time_critical = 6;
+}
+
+enum ThreadState {
+    ts_initialized = 0;
+    ts_ready = 1;
+    ts_running = 2;
+    ts_standby = 3;
+    ts_terminated = 4;
+    ts_wait = 5;
+    ts_transition = 6;
+    ts_unknown = 7;
+}
+
+enum ThreadWaitReason {
+    twr_executive = 0;
+    twr_free_page = 1;
+    twr_page_in = 2;
+    twr_system_allocation = 3;
+    twr_execution_delay = 4;
+    twr_suspended = 5;
+    twr_user_request = 6;
+    twr_event_pair_high = 7;
+    twr_event_pair_low = 8;
+    twr_lpc_receive = 9;
+    twr_lpc_reply = 10;
+    twr_virtual_memory = 11;
+    twr_page_out = 12;
+    twr_unknown = 13;
+}

@@ -1,0 +1,295 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/Timestamp.proto";
+import "google/api/annotations.proto";
+
+package VegaExpress.Agent.Generated;
+
+service Bind2Service {
+    rpc Connect(stream session) returns (stream session) { option (google.api.http) = { get: "/Connect" }; }    
+}
+
+
+message session {
+    service service = 2;
+    msg message = 1;
+}
+
+message msg
+{    
+    network_monitor network_monitor = 1;
+    oneof message_type {    
+        metrics metrics = 2;
+        gateway_routing_event_message gateway_routing_event_message = 3;
+        load_balancer_event_message load_balancer_event_message = 4;
+        instruction instruction = 5;
+        occurrence occurrence = 6;
+    }
+}
+
+message service {
+    service_event_type event_type = 1;
+    oneof service_type {        
+        gateway_routing_service gateway_routing_service = 3;
+        load_balancer_service load_balancer_service = 4;
+        worker_service worker_service = 5; 
+        client_service client_service = 6;
+    }
+}
+
+message network_monitor
+{    
+    bool is_internet_avaliable = 1;
+    map<string,string> details = 2;
+}
+
+enum service_state
+{
+    ss_unknown = 0;                    // cuando el servicio se encuentra con estado desconocido.
+    ss_running = 1;                    // cuando el servicio está en ejecución.
+    ss_started = 2;                    // cuando el servicio ha iniciado.
+    ss_stopped = 3;                    // cuando el servicio ha parado.
+    ss_disposed = 4;                   // cuando el servicio ha sido desechado.
+    ss_error = 5;                      // cuando el servicio ha encontrado un error.
+}
+
+message metrics
+{
+    double traffic = 1;             // número de solicitudes en cola.
+    double error_rate = 2;          // número de solicitudes fallidas.
+    double response_time = 3;       // tiempo promedio de respuesta.
+    double throughput = 4;          // número de solicitudes exitosas.
+    double availability = 5;        // porcentaje de tiempo que el servicio está disponible.
+    double latency = 6;             // tiempo de respuesta para recibir una respuesta a una solicitud.
+}
+
+message gateway_routing_service
+{
+    string service_UID = 1;
+    string service_name = 2;
+    string service_version = 3;
+    string service_address = 4;
+    string service_agent_UID = 5;
+    service_state service_state = 6;
+    bool service_is_Busy = 7;
+    google.protobuf.Timestamp latest_session = 8;
+    int32 process_ID = 9;
+    string process_name = 10;
+    server server = 11;
+    repeated route_endpoint endpoints = 12;
+}
+
+message route_endpoint
+{
+    string method = 1;
+    string pattern = 2;
+    string location = 3;
+}
+
+message load_balancer_service
+{
+    load_balancing_mode load_balancing_mode = 1;
+    string service_UID = 2;
+    string service_name = 3;
+    string service_version = 4;
+    string service_address = 5;
+    string service_agent_UID = 6;
+    service_state service_state = 7;
+    bool service_is_Busy = 8;
+    google.protobuf.Timestamp latest_session = 9;
+    int32 process_ID = 10;
+    string process_name = 11;
+    server server = 12;
+}
+
+message worker_service
+{
+    string service_UID = 1;
+    string service_name = 2;
+    string service_version = 3;
+    string service_address = 4;
+    string service_agent_UID = 5;
+    service_state service_state = 6; 
+    bool service_is_Busy = 7;
+    google.protobuf.Timestamp latest_session = 8;
+    int32 process_ID = 9;
+    string process_Name = 10;
+    server server = 11;
+}
+
+message client_service
+{
+    string service_UID = 1;
+    string service_name = 2;
+    string service_version = 3;
+    string service_address = 4;
+    string service_agent_UID = 5;
+    service_state service_state = 6; 
+    bool service_is_Busy = 7;
+    google.protobuf.Timestamp latest_session = 8;
+    int32 process_ID = 9;
+    string process_Name = 10;
+    server server = 11;
+}
+
+message server 
+{
+    string host_name = 1;
+    string user_name = 2;
+    string session = 3;
+    string location = 4;
+    string OS = 5;
+    string OS_arquitecture = 6;
+    int32 processors = 7;
+    string process_arquitecture = 8;
+    string RAM = 9;
+    repeated network_address network_addresses = 10;
+}
+
+message network_address
+{
+    string name = 1;
+    string MAC = 2;
+    string IPv4 = 3;
+    string IPv6 = 4;
+    int64 speed = 5;
+}
+
+enum load_balancing_mode
+{    
+    lbm_least_requests = 0;      // dirige las nuevas solicitudes al destino que tiene menos solicitudes activas.    
+}
+
+enum message_type
+{
+    mt_unknown = 0;
+    mt_instruction = 1;
+    mt_occurrence = 2;
+    mt_metrics = 3;
+    mt_gateway_routing_event = 4;
+    mt_load_balancer_event = 5;
+}
+
+enum instruction_type
+{
+    it_start_service = 0;
+    it_stop_service = 1;
+    it_pause_service = 2;
+    it_resume_service = 3;
+    it_update_service = 4;
+    it_delete_service = 5;
+}
+
+message instruction
+{
+    instruction_type type = 1;        
+    map<string, string> parameters = 2; 
+    google.protobuf.Timestamp request_date = 3;
+    google.protobuf.Timestamp execution_date = 4;    
+    string service_UID = 5;
+    string service_agent_UID = 6;
+}
+
+enum occurrence_type
+{
+    ot_information = 0;
+    ot_warning = 1;
+    ot_error = 2;
+    ot_critical = 3;
+}
+
+message occurrence
+{
+    occurrence_type type = 1;
+    google.protobuf.Timestamp execution_date = 2;
+    map<string, string> details = 3;  
+    string service_UID = 4;
+    string service_agent_UID = 5;
+}
+
+enum condition_type
+{
+    ct_equals = 0;
+    ct_not_equals = 1;
+    ct_greater_than = 2;
+    ct_less_than = 3;
+    ct_greater_than_or_equal = 4;
+    ct_less_than_or_equal = 5;
+    ct_contains = 6;
+    ct_starts_with = 7;
+    ct_ends_with = 8;
+    ct_in = 9;
+}
+
+message condition
+{
+    condition_type type = 1;
+    string field = 2;
+    string value = 3;
+}
+
+enum service_event_type
+{   
+    set_starting_service = 0;               // cuando el servicio esta iniciando.    
+    set_service_started = 1;                // cuando el servicio se inicia.
+    set_stopping_service = 2;               // cuando el servicio esta deteniendo.
+    set_service_stopped = 3;                // cuando el servicio se detiene.
+    set_rebooting_service = 4;              // cuando el servicio esta reinicinado.
+    set_service_rebooted = 5;               // cuando el servicio se reinicia.
+    set_beginning_stream = 6;               // cuando una transmisión está comenzando.
+    set_stream_started = 7;                 // cuando una transmisión comienza.
+    set_pausing_stream = 8;                 // cuando una transmisión se está pausando.
+    set_stream_paused = 9;                  // cuando una transmisión se pausa.
+    set_resuming_stream = 10;               // cuando una transmisión se está reanudando.
+    set_stream_resumed = 11;                // cuando una transmisión se reanuda.
+    set_ending_stream = 12;                 // cuando una transmisión se está deteniendo.
+    set_stream_ended = 13;                  // cuando una transmisión se detiene.
+    set_finishing_stream = 14;              // cuando una transmisión se está finalizando.
+    set_finished_stream = 15;               // cuando una transmisión se finaliza.
+    set_connection_event = 16;        // cuando ocurre un error en el servicio.
+}
+
+enum routing_event_type
+{
+    ret_route_added = 0;                  // cuando se agrega una nueva ruta.
+    ret_route_removed = 1;                // cuando se elimina una ruta.
+    ret_route_updated = 2;                // cuando se actualiza una ruta.
+    ret_request_routed = 3;               // cuando una solicitud es enrutada.
+    ret_request_received = 4;             // cuando se recibe una solicitud.
+    ret_response_sent = 5;                // cuando se envía una respuesta.
+    ret_route_error = 6;                  // cuando ocuurre un error durante el enrutamiento.
+    ret_service_unavailable = 7;          // cuando un servicio al que se intenta enrutar no está disponible.
+    ret_fallback_activated = 8;           // cuando se activa un mecanismo de fallback debido a un error o un servicio no disponible.
+    ret_circuit_breaker_triggered = 9;    // cuando se activa un circuit breaker.
+}
+
+message gateway_routing_event_message
+{
+    routing_event_type event_type = 1;
+    google.protobuf.Timestamp execution_date = 2;   
+    map<string, string> details = 3;
+    string service_UID = 4;
+    string service_agent_UID = 5;
+}
+
+enum load_balancer_event_type
+{
+    lbet_server_added = 0;                   // cuando se agrega un nuevo servidor al grupo de balanceo de carga.
+    lbet_server_removed = 1;                 // cuando se elimina un servidor del grupo de balanceo de carga.
+    lbet_server_unavailable = 2;             // cuando un servidor en el grupo de balanceo de carga no está disponible.
+    lbet_load_balancing_rule_changed = 3;    // cuando se cambia una regla de balanceo de carga.
+    lbet_traffic_increased = 4;              // cuando el tráfico a los servidores aumenta sifnigicativamente.
+    lbet_traffic_decreased = 5;              // cuando el tráfico a los servidores disminuye significatevamente.
+    lbet_balancer_error = 6;                 // cuando ocurre un error durante el balanceo de carga.
+    lbet_health_check_failed = 7;            // cuando una verificación de salud falla para un servidor en el grupo de balanceo.
+    lbet_health_check_passed = 8;            // cuando una verificación de salud pasa para un servidor en el grupo de balanceo de carga.
+}
+
+message load_balancer_event_message
+{
+    load_balancer_event_type event_type = 1;
+    google.protobuf.Timestamp execution_date = 2;
+    map<string, string> details = 3;
+    string service_UID = 4;
+    string service_agent_UID = 5;
+}

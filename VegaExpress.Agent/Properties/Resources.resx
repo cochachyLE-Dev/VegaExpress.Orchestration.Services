@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TermsAndConditions" xml:space="preserve">
+    <value>1. Aceptación de los Términos
+
+Estos Términos y Condiciones de Uso del Software (en
+adelante, los  "Términos")  constituyen  un  acuerdo
+legal entre usted  (en  adelante,  el  "Usuario")  y
+LIIKSOFT I.E.R.L. (en adelante,  la  "Empresa").  Al
+instalar,  acceder  o  utilizar  el   Software   (en
+adelante, el "Software"), usted acepta estar  sujeto
+a estos Términos. Si no acepta  estos  Términos,  no
+podrá instalar, acceder ni utilizar el Software.
+
+2. Concesión de Licencia
+
+La Empresa le concede  una  licencia  no  exclusiva,
+intransferible y limitada para utilizar el  Software
+únicamente en sus dispositivos  compatibles   y   de
+acuerdo con estos Términos. Usted no podrá  utilizar
+el Software para ningún otro propósito.
+
+3. Restricciones de Uso
+
+3.1 Restricciones Generales
+
+Usted no podrá:
+
+• Copiar, modificar, distribuir,
+  sublicenciar,   vender,   arrendar,   prestar    o
+  transferir el Software de ninguna manera;
+• Crear obras derivadas del Software;
+• Intentar descompilar, realizar
+  ingeniería inversa o acceder al código fuente  del
+  Software;
+• Eliminar o alterar cualquier aviso de
+  derechos de  autor  o  propiedad  intelectual  del
+  Software;
+• Utilizar el Software de cualquier
+  manera que pueda dañar, inhabilitar o  sobrecargar
+  los servidores o redes de la Empresa;
+• Utilizar el Software para violar
+  cualquier ley o regulación aplicable.
+
+3.2 Restricciones Específicas
+
+Queda expresamente prohibido:
+
+• Uso comercial: El Software no está
+  diseñado ni destinado para uso comercial. Usted no
+  podrá utilizar el Software para  ningún  propósito
+  comercial,  incluyendo,  pero   no   limitado   a,
+  actividades de negocio, generación de  ingresos  o
+  publicidad.
+• Distribución: Usted no podrá
+  distribuir el Software a terceros, ya sea de forma
+  gratuita o por una tarifa.
+• Modificación: Usted no podrá modificar
+  el Software de ninguna manera.
+• Ingeniería inversa: Usted no podrá
+  descompilar, realizar ingeniería inversa o acceder
+  al código fuente del Software.
+
+4. Propiedad Intelectual
+
+El Software y todos los derechos de autor, patentes,
+marcas comerciales y  otros  derechos  de  propiedad
+intelectual sobre el mismo son  propiedad  exclusiva
+de la Empresa o de sus licenciantes.
+
+5. Descargo de Responsabilidad
+
+EL  SOFTWARE  SE  PROPORCIONA  "TAL  CUAL"   Y   SIN
+GARANTÍAS DE NINGÚN  TIPO,  EXPRESAS  O  IMPLÍCITAS,
+INCLUIDAS, PERO NO LIMITADAS  A,  LAS  GARANTÍAS  DE
+COMERCIALIZACIÓN,  ADECUACIÓN  PARA   UN   PROPÓSITO
+PARTICULAR Y NO INFRACCIÓN. LA EMPRESA NO  GARANTIZA
+QUE  EL  SOFTWARE  SEA  ININTERRUMPIDO  O  LIBRE  DE
+ERRORES. LA EMPRESA NO SERÁ  RESPONSABLE  DE  NINGÚN
+DAÑO  DIRECTO,  INDIRECTO,   INCIDENTAL,   ESPECIAL,
+CONSECUENTE  O  EJEMPLAR  QUE  SURJA  DEL  USO   DEL
+SOFTWARE, INCLUSO SI LA EMPRESA HA SIDO ADVERTIDA DE
+LA POSIBILIDAD DE TALES DAÑOS.
+
+6. Indemnización
+
+Usted  indemnizará,  defenderá  y  eximirá  de  toda
+responsabilidad  a  la  Empresa,   sus   directivos,
+empleados, agentes, representantes,  licenciantes  y
+proveedores frente a cualquier reclamación, pérdida,
+daño, responsabilidad, costo y gasto (incluidos  los
+honorarios razonables de abogados) que surjan  de  o
+estén relacionados con su  uso  del  Software  o  su
+violación de estos Términos.
+
+7. Terminación
+
+La  Empresa  puede  rescindir  estos   Términos   en
+cualquier  momento  y  sin  previo  aviso.  Tras  la
+rescisión,  usted  deberá  dejar  de   utilizar   el
+Software y destruir todas las copias del mismo en su
+poder o bajo su control.
+
+8. Disposiciones Generales
+
+Estos  Términos  se  regirán  e   interpretarán   de
+conformidad con las leyes de Perú. Cualquier disputa
+que  surja  de  estos  Términos  se  someterá  a  la
+jurisdicción exclusiva de los tribunales de Perú. Si
+alguna disposición de estos  Términos  se  considera
+inválida  o  inaplicable,   dicha   disposición   se
+eliminará de  estos  Términos  y  las  disposiciones
+restantes seguirán en pleno vigor  y  efecto.  Estos
+Términos constituyen el acuerdo completo  entre  las
+partes en relación con el objeto  de  los  mismos  y
+reemplazan  todos  los  acuerdos  o   entendimientos
+anteriores, escritos u orales.
+
+9. Información de Contacto
+
+Si  tiene  alguna  pregunta  sobre  estos  Términos,
+póngase    en    contacto    con     nosotros     en
+luis.cochachi@liiksoft.com</value>
+  </data>
+</root>

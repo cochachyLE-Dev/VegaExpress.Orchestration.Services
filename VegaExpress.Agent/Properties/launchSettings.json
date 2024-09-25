@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "VegaExpress.Agent": {
+      "commandName": "Project",
+      "commandLineArgs": "--service-address https://127.0.0.1:5081",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    }
+  }
+}

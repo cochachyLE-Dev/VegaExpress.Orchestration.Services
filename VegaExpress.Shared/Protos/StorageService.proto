@@ -1,0 +1,269 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/Empty.proto";
+import "google/protobuf/Timestamp.proto";
+import "google/api/annotations.proto";
+
+package VegaExpress.Worker.Storage.Generated;
+
+/*
+    init    :  Inicializa un nuevo repositorio de almacenamiento en el directorio actual. 
+    clone   :  Clona un repositorio de almacenamiento existente desde la dirección url proporcionada.
+    add     :  Agrega un registro al área de preparación para el próximo commit.
+    commit  :  Realiza un commit de los cambios en el área de preparación con el mensaje proporcionado.
+    push    :  Empuja los cambios al repositorio remoto y a la rama especifica.
+    pull    :  Trae los cambios del repositorio remoto y de la rama especifica y los fusiona con la rama actual.
+    branch  :  Crea una nueva rama con el nombre proporcionado.
+    checkout:  Cambia a la rama especifica.
+    merge   :  Fusiona la rama especifica con la rama actual. 
+    status  :  Muestra el estado actual del repositorio, incluyendo cualquier cambio no comprometido.
+*/
+
+service storage_db_service 
+{
+    // rpc for initializing a new repository
+    rpc init(init_request) returns (init_response) { option (google.api.http) = { get: "/storage/init" }; }
+    // rpc for cloning a existing repository
+    rpc clone(clone_request) returns (stream clone_response) { option (google.api.http) = { get: "/storage/clone" }; }
+    // rpc for adding a record to the staging area
+    rpc add(add_request) returns (add_response) { option (google.api.http) = { get: "/storage/add" }; }
+    // rpc for committing changes in the staging area
+    rpc commit(commit_request) returns (commit_response) { option (google.api.http) = { get: "/storage/comit" }; }
+    // rpc for pushing changes to the remote repository
+    rpc push(stream push_request) returns (stream push_response) { option (google.api.http) = { get: "/storage/push" }; }
+    // rpc for pulling changes from the remote repository
+    rpc pull(stream pull_request) returns (stream pull_response) { option (google.api.http) = { get: "/storage/pull" }; }
+    // rpc for creating a new branch
+    rpc branch(branch_request) returns (branch_response) { option (google.api.http) = { get: "/storage/branch" }; }
+    // rpc for switching to a specific branch
+    rpc checkout(checkout_request) returns (checkout_response) { option (google.api.http) = { get: "/storage/checkout" }; }
+    // rpc for merging a specific  branch with the current branch
+    rpc merge(stream merge_request) returns (stream merge_response) { option (google.api.http) = { get: "/storage/merge" }; }
+    // rpc for showing the current status of the repository
+    rpc status(stream status_request) returns (stream status_response) { option (google.api.http) = { get: "/storage/status" }; }
+}
+
+message init_request 
+{    
+    string connection_method = 1;
+    map<string,string> parameters = 2;
+    SSL SSL = 3;
+}
+message parameters
+{
+    string hostname = 1;
+    int32 port = 2;
+    string username = 3;
+    string password = 4;
+    string default_schema = 5;
+}
+message SSL
+{
+    bytes ssl_key_file = 1;
+    bytes ssl_cert_file = 2;
+    bytes ssl_ca_file = 3;
+    string ssl_cipher = 4;
+}
+
+message init_response
+{
+    bool success = 1;
+    string error_message = 2;
+    map<string, string> details = 3;
+}
+
+message clone_request
+{
+    string url = 1;
+}
+
+message clone_response 
+{
+    bytes data = 1;  
+}
+
+message add_request
+{
+    string repository_uid = 1;   
+    string origin_uid = 3;
+    bytes key = 4;
+    bytes record = 5;
+}
+
+message add_response
+{
+    oneof response 
+    {
+        add_result result = 1;
+        add_data data = 2;
+    }
+}
+
+message add_result
+{
+    bool success = 1;
+    string message = 2;
+}
+message add_data
+{
+    string tree_uid = 3;
+    string commit_uid = 4;
+    string record_uid = 5;
+}
+
+message commit_request
+{
+    string message = 1;
+}
+message commit_response
+{
+    bool success = 1;
+    string error_message = 2;
+}
+message push_request
+{       
+    string message = 1;
+    string tree_uid = 2;
+    string commit_uid = 3;
+    string blob_uid = 4;
+}
+
+message push_response
+{
+     oneof request 
+    {
+        push_data data = 1;
+        push_commit comit = 2;
+    }
+}
+
+message push_data
+{
+    string tree_uid = 1;
+    string commit_uid = 2;    
+    string blob_uid = 3;
+    changes changes = 4;
+}
+
+message push_commit
+{
+    string commit_uid = 1;
+    string repository_uid = 2;
+    string user_uid = 3;
+    google.protobuf.Timestamp date = 4;
+    string message = 5;
+    string main_tree_uid = 6;
+    string parent_commit_uid = 7;    
+}
+
+message pull_request
+{
+   blob blob = 1;
+}
+
+message blob
+{
+    string blob_uid = 1;
+    string tree_uid = 2;
+    bytes key = 3;
+    bytes record = 4;
+    int32 mode = 5;
+    string origin_uid = 6;
+    bool is_sent = 7;
+    tree tree = 8;
+}
+message tree
+{
+    string tree_uid = 1;
+    string commit_uid = 2;
+    commit commit = 3;
+}
+message commit
+{
+    string commit_uid = 1;
+    string repository_uid = 2;
+    string user_uid = 3;
+    google.protobuf.Timestamp Date = 4;
+    string message = 5;
+    string main_tree_uid = 6;
+    string parent_commit_uid = 7;    
+}
+
+message  pull_data
+{
+    string tree_uid = 1;
+    string commit_uid = 2;   
+    string blob_uid = 3;
+    changes changes = 4;
+}
+
+message pull_commit
+{
+    string commit_uid = 1;
+    string repository_uid = 2;
+    string user_uid = 3;
+    google.protobuf.Timestamp date = 4;
+    string message = 5;
+    string main_tree_uid = 6;
+    string parent_commit_uid = 7;       
+}
+
+message pull_response
+{
+    string message = 1;
+    string tree_uid = 2;
+    string commit_uid = 3;
+    string blob_uid = 4;
+}
+
+message branch_request
+{
+    string name = 1; // name of the new branch
+}
+
+message branch_response
+{
+    bool success = 1;
+    string error_message = 2;
+}
+
+message checkout_request
+{
+    string branch = 1; // name of the branch to checkout
+}
+
+message checkout_response
+{
+    bool success = 1;
+    string error_message = 2;
+}
+
+message merge_request
+{
+    string branch = 1;
+}
+
+message merge_response
+{
+    bool success = 1;
+    string error_message = 2;
+}
+
+message status_request { }
+
+message status_response
+{
+    string branch = 1;   
+    oneof changes 
+    {
+        changes changes_pending_commit = 2;    // registros que se han modificado o creado, pero que aún no se ha incluido en un commit.
+        changes untracked_changes = 3;         // registros nuevos que no se han añadido al repositorio.
+    }
+}
+
+message changes
+{            
+    string origin_uid = 3;
+    bytes key = 4;
+    bytes record = 5;
+}

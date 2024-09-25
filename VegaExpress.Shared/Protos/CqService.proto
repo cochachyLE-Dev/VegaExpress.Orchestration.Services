@@ -1,0 +1,134 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/Empty.proto";
+import "google/protobuf/Timestamp.proto";
+import "google/api/annotations.proto";
+
+package VegaExpress.Worker.Generated;
+
+service cqService 
+{
+    rpc link(stream link_request) returns (google.protobuf.Empty) { option (google.api.http) = { get: "/link" }; }    
+    rpc execute(stream cq_request) returns (stream cq_response) { option (google.api.http) = { get: "/execute" }; }
+}
+
+message cq_request
+{
+    string operation_name = 1;
+    string query = 2;
+    map<string,value> variables = 3;
+    pagination pagination = 4;
+
+    message value 
+    {
+        value_type type = 1;
+        bytes value = 2;
+
+    }
+    enum value_type
+    {
+        null = 0;
+        int32 = 1;
+        int64 = 2;
+        uint32 = 3;
+        uint64 = 4;
+        sint32 = 5;
+        sint64 = 6;
+        bool = 7;
+        string =8 ;
+        bytes = 9;
+        double =10;
+        float = 11;
+    }
+}
+
+message cq_response
+{
+    oneof result {
+        bytes data = 1;
+        cq_Error error = 2;    
+    }
+}
+
+message cq_Error
+{
+    string message = 1;
+    repeated location locations = 2;
+    repeated string path = 3;
+    
+    message location 
+    {
+        int32 line = 1;
+        int32 column = 2;
+    }
+}
+
+message pagination
+{
+    int32 page = 1;
+    int32 page_size = 2;
+}
+
+message link_request
+{
+    service service = 1;
+    network_monitor network_monitor = 2;
+    google.protobuf.Timestamp latest_link = 3;    
+}
+
+message service
+{
+    string service_UID = 1;
+    string service_name = 2;
+    string service_version = 3;
+    string service_address = 4;
+    service_state state = 6;         
+    int32 PID = 9;
+    string process_name = 10;
+    server server = 11;        
+
+}
+
+enum service_state
+{
+    unknown = 0;    // cuando el servicio se encuentra con estado desconocido.
+    running = 1;    // cuando el servicio está en ejecución.
+    started = 2;    // cuando el servicio ha iniciado.
+    stopped = 3;    // cuando el servicio ha parado.
+    disposed = 4;   // cuando el servicio ha sido desechado.
+    error = 5;      // cuando el servicio ha encontrado un error.
+}
+
+message server 
+{
+    string host_name = 1;
+    string user_name = 2;
+    string session = 3;
+    string location = 4;
+    string OS = 5;
+    string OS_arquitecture = 6;
+    int32 processors = 7;
+    string process_arquitecture = 8;
+    string RAM = 9;
+    repeated network_address network_addresses = 10;
+}
+
+message network_address
+{
+    string name = 1;
+    string MAC = 2;
+    string IPv4 = 3;
+    string IPv6 = 4;
+    int64 speed = 5;
+}
+    
+message network_monitor
+{    
+    bool is_internet_avaliable = 1;
+    map<string,string> details = 2;
+}
+
+
+message link_response
+{
+}

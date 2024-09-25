@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-VegaExpress.Agent-d4506e43-bacf-4ff1-8b69-f7135c783123</UserSecretsId>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.18.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.14" />
+    <PackageReference Include="Terminal.Gui" Version="1.16.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
+    <PackageReference Include="ReactiveUI.Fody" Version="*" />
+    <PackageReference Include="ReactiveUI" Version="19.6.1" />
+    <PackageReference Include="ReactiveMarbles.ObservableEvents.SourceGenerator" Version="1.3.1" PrivateAssets="all" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\VegaExpress.Shared\Extentions\ServerCallContextExtention.cs">
+      <Link>Extentions\ServerCallContextExtention.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\IMessageQueueService.cs">
+      <Link>Shared\IMessageQueueService.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Services\BindService.cs">
+      <Link>Services\BindService.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Services\MessageQueueService.cs">
+      <Link>Services\MessageQueueService.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Utilities\ProcessThreadLister.cs">
+      <Link>Utilities\ProcessThreadLister.cs</Link>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>    
+    <Protobuf Include="..\VegaExpress.Shared\Protos\ProcessShedulerService.proto" Link="Protos\ProcessShedulerService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\BindService.proto" Link="Protos\BindService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\FileService.proto" Link="Protos\FileService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\MessageQueueService.proto" Link="Protos\MessageQueueService.proto" GrpcServices="Server" />
+
+    <Protobuf Include="..\VegaExpress.Shared\Protos\ProcessThreadService.proto" Link="Protos\ProcessThreadService.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\StorageService.proto" Link="Protos\StorageService.proto" GrpcServices="Server" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Shell\" />
+  </ItemGroup>
+</Project>

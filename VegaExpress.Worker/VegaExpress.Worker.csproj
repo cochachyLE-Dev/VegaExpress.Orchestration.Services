@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-VegaExpress.Worker-c029e881-d582-47e6-8f8a-52a026e98e69</UserSecretsId>    
+    <Version>1.0.0.3</Version>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\VegaExpress.Shared\Extentions\ServerCallContextExtention.cs">
+      <Link>Extentions\ServerCallContextExtention.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Utilities\ProcessThreadLister.cs">
+      <Link>Utilities\ProcessThreadLister.cs</Link>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>    
+    <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.52.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.0-preview.3.24172.13" />    
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.5.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.3" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\VegaExpress.Worker.Core\VegaExpress.Worker.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf Include="..\VegaExpress.Shared\Protos\Example.proto" Link="Protos\Example.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\Shared.proto" Link="Protos\Shared.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\MessageQueueService.proto" Link="Protos\MessageQueueService.proto" GrpcServices="client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\BindService.proto" Link="Protos\BindService.proto" GrpcServices="Client" />    
+    <Protobuf Include="..\VegaExpress.Shared\Protos\HealthCheckService.proto" Link="Protos\HealthCheckService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\LoadBalancingService.proto" Link="Protos\LoadBalancingService.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\RegistrationService.proto" Link="Protos\RegistrationService.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\WorkerService.proto" Link="Protos\WorkerService.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\ProcessThreadService.proto" Link="Protos\ProcessThreadService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\ProcessShedulerService.proto" Link="Protos\ProcessShedulerService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\StorageService.proto" Link="Protos\StorageService.proto" GrpcServices="Client" />
+  </ItemGroup>
+</Project>

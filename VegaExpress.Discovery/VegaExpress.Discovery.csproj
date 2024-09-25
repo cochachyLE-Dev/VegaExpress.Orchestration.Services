@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-VegaExpress.Discovery-07ac8ba1-5766-4905-ab91-0e963fb217d7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.18.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\VegaExpress.Shared\Extentions\ServerCallContextExtention.cs">
+      <Link>Extentions\ServerCallContextExtention.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\IMessageQueueService.cs">
+      <Link>Shared\IMessageQueueService.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Services\BindService.cs">
+      <Link>Services\BindService.cs</Link>
+    </Compile>
+    <Compile Include="..\VegaExpress.Shared\Services\MessageQueueService.cs">
+      <Link>Services\MessageQueueService.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\VegaExpress.Shared\Protos\HealthCheckService.proto" Link="Protos\HealthCheckService.proto" GrpcServices="Client" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\ProcessShedulerService.proto" Link="Protos\ProcessShedulerService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\BindService.proto" Link="Protos\BindService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\FileService.proto" Link="Protos\FileService.proto" GrpcServices="Server" />
+    <Protobuf Include="..\VegaExpress.Shared\Protos\MessageQueueService.proto" Link="Protos\MessageQueueService.proto" GrpcServices="Server" />
+  </ItemGroup>
+  
+</Project>

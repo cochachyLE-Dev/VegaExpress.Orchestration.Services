@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+message job_scheduler_request
+{
+    jobRequestType  request_type = 1;
+    jobConstraints constraints = 2;
+    jobNetworkType network_type = 3;
+
+    enum jobRequestType
+    {
+        inmediate = 0;   // cuando la tarea debe comerzar de inmediato y completarse pronto.
+        long_running = 1; // cuando la tarea podría ejecutarse durante más tiempo, posiblemente más de 10 minutos.        
+        deferrable = 3;  // cuando la tarea se ejecuta de forma periódica.
+    }
+
+    message jobConstraints
+    {
+        bool required_network_type = 1;         // cuando el trabajo requiere una red no medida, una red medida o cualquier red.        
+        bool requires_battery_not_low = 3;      // cuando el trabajo sólo debe ejecutarse cuando la batería no está baja.        
+        bool requires_storage_not_low = 5;      // cuando el trabajo sólo debe ejecutarse cuando el almacenamiento del dispositivo no está bajo.
+        bool requires_device_idle = 7;          // cuando el trabajo sólo debe ejecutarse cuando el dispositivo está inactivo.
+        bool requires_charging = 9;             // cuando el trabajo sólo debe ejecutarse cuando el dispositivo está cargando.
+    }
+
+    enum jobNetworkType
+    {
+        unmetered = 0;
+    }
+}
+
+message job_scheduler_response
+{
+    string worker_uid = 1;
+}
+
+enum ProcessStatusType
+{
+    New = 0;
+    Open = 1;
+    Pending = 2;
+    OnHold = 3;
+    InProgress = 4;
+    Resolved = 5;
+    Closed = 6;
+    Cancelled = 7;
+}

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "VegaExpress.Worker": {
+      "commandName": "Project",
+      "commandLineArgs": "--service-address https://127.0.0.1:8083 --service-agent-address https://127.0.0.1:5081 --service-agent-uid 9b33ed7d-503e-422a-b254-89f98a441ccd",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    }
+  }
+}

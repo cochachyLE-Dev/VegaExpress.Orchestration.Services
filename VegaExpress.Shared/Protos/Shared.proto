@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+package VegaExpress.Discovery;
+
+enum ResponseStatus
+{
+    success = 0;
+    timeout = 1;
+    connection_lost = 2;
+    unauthorized = 3;
+    not_found = 4;
+    internal_server_error = 5;
+}
