@@ -30,6 +30,15 @@
 * **Contacto:** luis.cochachi.eng@gmail.com 
 * **Linkedin:** [Mi perfil de LinkedIn](https://www.linkedin.com/in/luis-eduardo-cochachi-chamorro-659755b2/)
 
+## ☕Invítame un café
+¡Hola! Si disfrutas del proyecto y te gustaría apoyarlo de una manera diferente, puedes invitarme un café ☕ haciendo una donación. Esto me ayuda a seguir dedicando mi tiempo a mejorar el código y crear nuevas funcionalidades.
+
+Soy un apasionado del desarrollo de software y siempre estoy buscando nuevas formas de aprender y compartir mis conocimientos. Cada contribución, por pequeña que sea, significa mucho para mí y me motiva a seguir adelante.
+
+Puedes invitarme un café a través de Paypal: [Donar aquí](https://www.paypal.com/paypalme/luiscochachichamorro)
+
+¡Gracias por tu apoyo! 🚀
+
 ## Licencia
 Copyright (C) 2024 Luis Eduardo Cochachi Chamorro
 
