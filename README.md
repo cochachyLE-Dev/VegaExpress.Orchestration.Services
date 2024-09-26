@@ -31,4 +31,6 @@
 * **Linkedin:** [Mi perfil de LinkedIn](https://www.linkedin.com/in/luis-eduardo-cochachi-chamorro-659755b2/)
 
 ## Licencia
+Copyright (C) 2024 Luis Eduardo Cochachi Chamorro
+
 Este proyecto se distribuye bajo la licencia GNU General Public License versión 3 o cualquier versión posterior (GPLv3), con la excepción de vinculación comercial. Esto significa que puedes utilizar, modificar y distribuir este código libremente, incluso con fines comerciales, pero cualquer aplicación que combine este código con otros componentes debe ser liberada bajo la GPLv3.
