@@ -1,8 +1,8 @@
 ![VegaExpress.Orchestration.Services](https://github.com/cochachyLE-Dev/VegaExpress.Orchestration.Services/blob/main/repository-open-graph.png)
 
-## VegaExpress.Orchestration.Services
+## VEGA EXPRESS ORCHESTRATION SERVICES
 
-**VegaExpress.Orchestration.Services** es un potente motor de orquestación .NET diseñado para simplificar el desarrollo de aplicaciones de microservicios. Al proporcionar un servicio de descubrimiento de servicios altamente eficiente y un proxy inteligente, este framework facilita la comunicación entre servicios, mejora la resiliencia de la aplicación y permite una fácil escalabilidad. Construido sobre los principios Clean Architecture, VegaExpress ofrece una base sólida para crear aplicaciones distribuidas modernas.
+**VEGA EXPRESS ORCHESTRATION SERVICES** es un potente motor de orquestación .NET diseñado para simplificar el desarrollo de aplicaciones de microservicios. Al proporcionar un servicio de descubrimiento de servicios altamente eficiente y un proxy inteligente, este framework facilita la comunicación entre servicios, mejora la resiliencia de la aplicación y permite una fácil escalabilidad. VEGA EXPRESS ofrece una base sólida para crear aplicaciones distribuidas modernas, optimizando la interoperabilidad y el rendimiento en entornos complejos.
 
 ![VegaExpress.Orchestration.Services](https://github.com/cochachyLE-Dev/VegaExpress.Orchestration.Services/blob/main/VegaExpress.Orchestration.Services.gif)
 
